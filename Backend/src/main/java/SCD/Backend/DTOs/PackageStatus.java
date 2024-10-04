@@ -1,2 +1,7 @@
-package SCD.Backend.DTOs;public enum PackageStatus {
+package SCD.Backend.DTOs;
+
+public enum PackageStatus {
+    NEW,
+    PENDING,
+    DELIVERED
 }

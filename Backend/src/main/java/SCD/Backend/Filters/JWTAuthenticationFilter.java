@@ -1,5 +1,7 @@
 package SCD.Backend.Filters;
 
+import SCD.Backend.Models.Courier;
+import SCD.Backend.Services.JWTService;
 import SCD.Backend.Services.UserDetailsServiceImp;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -18,10 +20,10 @@ import java.io.IOException;
 @Component
 public class JWTAuthenticationFilter extends OncePerRequestFilter {
 
-    private final JwtService jwtService;
+    private final JWTService jwtService;
     private final UserDetailsServiceImp userDetailsService;
 
-    public JwtAuthenticationFilter(JwtService jwtService, UserDetailsServiceImp userDetails, UserDetailsServiceImp userDetailsService) {
+    public JWTAuthenticationFilter(JWTService jwtService, UserDetailsServiceImp userDetails, UserDetailsServiceImp userDetailsService) {
         this.jwtService = jwtService;
         this.userDetailsService = userDetailsService;
     }
@@ -29,7 +31,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull FilterChain filterChain) throws ServletException, IOException {
         String authHeader = request.getHeader("Authorization");
-        if(authHeader == null || !authHeader.startsWith("Bearer ")){
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
             return;
         }
@@ -37,11 +39,11 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
         String token = authHeader.substring(7);
         String username = jwtService.extractUsername(token);
 
-        if(username!= null && SecurityContextHolder.getContext().getAuthentication() == null){
+        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
 
-            if(jwtService.isValid(token, (User) userDetails)){
+            if (jwtService.isValid(token, (Courier) userDetails)) {
                 UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
                         userDetails, null, userDetails.getAuthorities()
                 );
@@ -54,4 +56,5 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
         }
         filterChain.doFilter(request, response);
     }
+}
 
