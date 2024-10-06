@@ -49,6 +49,7 @@ public class JWTService {
                 .builder()
                 .setHeaderParam("typ","JWT")
                 .subject(courier.getEmail())
+                .claim("email", courier.getEmail())
                 .issuedAt(new Date(System.currentTimeMillis()))
                 .expiration(new Date(System.currentTimeMillis()+24*60*60*1000))
                 .signWith(getSigninKey())

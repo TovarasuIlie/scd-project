@@ -4,12 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:UI"
-    Shell.FlyoutBehavior="Disabled"
-    Title="UI">
+    xmlns:pages="clr-namespace:UI.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader>
+        <Image Source="dotnet_bot.png" />
+    </Shell.FlyoutHeader>
+    <Shell.FlyoutFooter>
+        <Label Text="© 2024-2025 Copyright. All Rights Reseved | by Niculai Ilie-Traian ©" FontSize="12" Padding="10" HorizontalTextAlignment="Center"/>
+    </Shell.FlyoutFooter>
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage"
+        FlyoutItemIsVisible="False"/>
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:LoginPage}"
-        Route="MainPage" />
+        Title="Acasa"
+        ContentTemplate="{DataTemplate pages:IndexPage}"
+        Route="IndexPage" />
+
+    <ShellContent
+        Title="Profil"
+        ContentTemplate="{DataTemplate pages:ProfilePage}"
+        Route="ProfilePage" />
 
 </Shell>

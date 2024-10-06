@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="P:UI.ViewModel.LoginViewModel.LoginRequestDTO">
+            <inheritdoc cref="F:UI.ViewModel.LoginViewModel.loginRequestDTO"/>
+        </member>
+        <member name="F:UI.ViewModel.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:UI.ViewModel.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:UI.ViewModel.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:UI.ViewModel.LoginViewModel.Login"/>.</summary>
+        </member>
+    </members>
+</doc>

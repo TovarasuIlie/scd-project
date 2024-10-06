@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UI.Pages.LoginPage"
+             xmlns:viewmodel ="clr-namespace:UI.ViewModel"
+             x:DataType="viewmodel:LoginViewModel"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Fereastra autentificare">
+    <ScrollView>
+        <ContentView Padding="50">
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto" RowSpacing="10">
+                <Image Source="dotnet_bot.png" Grid.Row="0"></Image>
+                <Entry Text="{Binding LoginRequestDTO.Username}" Placeholder="Email" Grid.Row="1"></Entry>
+                <Entry Text="{Binding LoginRequestDTO.Password}" Placeholder="Parola" Grid.Row="2"></Entry>
+                <Button Text="Autentifica-te" Grid.Row="3" Command="{Binding LoginCommand}"></Button>
+            </Grid>
+        </ContentView>
+    </ScrollView>
+</ContentPage> 
