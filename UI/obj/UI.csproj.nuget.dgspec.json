@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proiect\\scd-project\\UI\\UI.csproj": {}
+    "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj": {}
   },
   "projects": {
-    "D:\\Proiect\\scd-project\\UI\\UI.csproj": {
+    "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proiect\\scd-project\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "D:\\Proiect\\scd-project\\UI\\UI.csproj",
+        "projectPath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\Niculai Ilie-Traian\\.nuget\\packages\\",
-        "outputPath": "D:\\Proiect\\scd-project\\UI\\obj\\",
+        "outputPath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -31,7 +31,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/B7xAzZRNIjjgN1faig9andjyUFggJ6eDYlF1ez9DW6n5yNSRTu/api/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-android34.0": {

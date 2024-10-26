@@ -34,4 +34,8 @@ public class PackageService {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(new APIMessage(HttpStatus.CREATED, "Comanda inserata!"));
     }
+
+    public ResponseEntity<?> getDeliveryByID(Integer id) {
+        return ResponseEntity.ok(packageRepository.findById(id));
+    }
 }

@@ -18,6 +18,11 @@ public class PackageController {
         return packageService.getAllDeliveries();
     }
 
+    @GetMapping("get-delivery-by-id/{id}")
+    public ResponseEntity<?> getDeliveryById(@PathVariable Integer id) {
+        return packageService.getDeliveryByID(id);
+    }
+
     @PostMapping("create-delivery")
     public ResponseEntity<?> createDelivery(@RequestBody NewPackageDTO newPackageDTO) {
         return packageService.createNewDelivery(newPackageDTO);

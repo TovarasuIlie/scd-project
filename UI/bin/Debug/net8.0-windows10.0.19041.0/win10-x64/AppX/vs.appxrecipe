@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-AKQC18G</Machine>
+    <Machine>DESKTOP-6T8JT7M</Machine>
     <WindowsUser>Niculai Ilie-Traian</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.ui</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>2168204D954A5EEAFA8A107E1C027AE898577A510B9C15E727DA700CEFCAD7A1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.ui_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.ui_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,268 +27,268 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-06T10:50:46.386</Modified>
+      <Modified>2024-10-08T17:18:19.650</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-06T10:05:56.527</Modified>
+      <Modified>2024-10-08T16:19:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.runtimeconfig.json">
       <PackagePath>UI.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-06T08:09:44.295</Modified>
+      <Modified>2024-10-08T12:55:52.513</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.dll">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.dll">
       <PackagePath>UI.dll</PackagePath>
-      <Modified>2024-10-06T10:50:45.842</Modified>
+      <Modified>2024-10-08T17:18:19.308</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>UI.exe</PackagePath>
-      <Modified>2024-10-06T10:50:45.850</Modified>
+      <Modified>2024-10-08T17:18:19.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-10-04T17:01:19.085</Modified>
+      <Modified>2024-10-03T14:52:24.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:01:23.626</Modified>
+      <Modified>2024-10-08T12:50:49.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:01:23.626</Modified>
+      <Modified>2024-10-08T12:50:49.386</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:01:23.627</Modified>
+      <Modified>2024-10-08T12:50:49.409</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:01:23.628</Modified>
+      <Modified>2024-10-08T12:50:49.441</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:01:23.629</Modified>
+      <Modified>2024-10-08T12:50:49.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-10-04T17:01:23.588</Modified>
+      <Modified>2024-10-03T14:52:24.849</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-10-04T17:01:23.590</Modified>
+      <Modified>2024-10-03T14:52:24.850</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-10-04T17:13:50.045</Modified>
+      <Modified>2024-10-08T12:50:50.654</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.030</Modified>
+      <Modified>2024-10-08T12:50:50.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.030</Modified>
+      <Modified>2024-10-08T12:50:50.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.029</Modified>
+      <Modified>2024-10-08T12:50:50.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.029</Modified>
+      <Modified>2024-10-08T12:50:50.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.029</Modified>
+      <Modified>2024-10-08T12:50:50.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.039</Modified>
+      <Modified>2024-10-08T12:50:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.039</Modified>
+      <Modified>2024-10-08T12:50:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.037</Modified>
+      <Modified>2024-10-08T12:50:50.650</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.038</Modified>
+      <Modified>2024-10-08T12:50:50.650</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.038</Modified>
+      <Modified>2024-10-08T12:50:50.650</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.041</Modified>
+      <Modified>2024-10-08T12:50:50.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.040</Modified>
+      <Modified>2024-10-08T12:50:50.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.039</Modified>
+      <Modified>2024-10-08T12:50:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.040</Modified>
+      <Modified>2024-10-08T12:50:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.040</Modified>
+      <Modified>2024-10-08T12:50:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.044</Modified>
+      <Modified>2024-10-08T12:50:50.654</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.044</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.044</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.043</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.043</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.043</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.042</Modified>
+      <Modified>2024-10-08T12:50:50.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.041</Modified>
+      <Modified>2024-10-08T12:50:50.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.042</Modified>
+      <Modified>2024-10-08T12:50:50.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.042</Modified>
+      <Modified>2024-10-08T12:50:50.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.034</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.034</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.033</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.033</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.033</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.035</Modified>
+      <Modified>2024-10-08T12:50:50.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.035</Modified>
+      <Modified>2024-10-08T12:50:50.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.035</Modified>
+      <Modified>2024-10-08T12:50:50.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.034</Modified>
+      <Modified>2024-10-08T12:50:50.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.034</Modified>
+      <Modified>2024-10-08T12:50:50.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.037</Modified>
+      <Modified>2024-10-08T12:50:50.650</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.037</Modified>
+      <Modified>2024-10-08T12:50:50.650</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.036</Modified>
+      <Modified>2024-10-08T12:50:50.649</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.036</Modified>
+      <Modified>2024-10-08T12:50:50.649</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.036</Modified>
+      <Modified>2024-10-08T12:50:50.649</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.032</Modified>
+      <Modified>2024-10-08T12:50:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.032</Modified>
+      <Modified>2024-10-08T12:50:50.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.031</Modified>
+      <Modified>2024-10-08T12:50:50.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.031</Modified>
+      <Modified>2024-10-08T12:50:50.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.031</Modified>
+      <Modified>2024-10-08T12:50:50.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.028</Modified>
+      <Modified>2024-10-08T12:50:50.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.028</Modified>
+      <Modified>2024-10-08T12:50:50.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.027</Modified>
+      <Modified>2024-10-08T12:50:50.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.027</Modified>
+      <Modified>2024-10-08T12:50:50.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-10-04T17:13:50.026</Modified>
+      <Modified>2024-10-08T12:50:50.643</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Proiect\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.deps.json">
+    <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UI.deps.json">
       <PackagePath>UI.deps.json</PackagePath>
-      <Modified>2024-10-06T10:05:56.106</Modified>
+      <Modified>2024-10-08T16:19:29.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niculai Ilie-Traian\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

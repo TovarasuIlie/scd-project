@@ -38,11 +38,17 @@ namespace UI.Services
                     var result = await httpClient.PostAsJsonAsync("/api/Authentification/login-into", loginDTO);
                     if (result.IsSuccessStatusCode)
                     {
-                        var response = await result.Content.ReadFromJsonAsync<AuthResponseDTO>();
-                        //var serializeResponse = JsonSerializer.Serialize(
-                        //    new AuthResponseDTO() { AccessToken = response.AccessToken, RefreshToken = response.RefreshToken, UserName = loginDTO.Username }
-                        //    );
-                        //await SecureStorage.Default.SetAsync("Auth", serializeResponse);
+                        var response = await result.Content.ReadFromJsonAsync<LoggedUserDTO>();
+                        var serializeResponse = JsonSerializer.Serialize(
+                                new LoggedUserDTO() 
+                                { 
+                                    Id = response.Id,
+                                    Email = response.Email,
+                                    Name = response.Name,
+                                    Jwt = response.Jwt
+                                }
+                            );
+                        await SecureStorage.Default.SetAsync("LoggedUser", serializeResponse);
                         await Shell.Current.GoToAsync($"//{nameof(IndexPage)}");
                     }
                     else

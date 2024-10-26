@@ -12,6 +12,4 @@ public class LoggedUserDTO {
     private String email;
     private String name;
     private String jwt;
-    private String accessToken;
-    private String refreshToken;
 }

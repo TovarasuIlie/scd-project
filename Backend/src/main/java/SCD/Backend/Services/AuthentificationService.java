@@ -52,7 +52,7 @@ public class AuthentificationService {
                 Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getUsername(), loginDTO.getPassword()));
                 if(authentication.isAuthenticated()) {
                     String jwt = jwtService.generateToken(courier.get());
-                    return ResponseEntity.ok(new LoggedUserDTO(courier.get().getId(), courier.get().getEmail(), courier.get().getName(), jwt, jwt, jwt));
+                    return ResponseEntity.ok(new LoggedUserDTO(courier.get().getId(), courier.get().getEmail(), courier.get().getName(), jwt));
                 }
             } catch (AuthenticationException e) {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new APIMessage(HttpStatus.BAD_REQUEST, "Numele de utilizator sau parola sunt gresite!"));

@@ -20,8 +20,15 @@ namespace UI
                 });
 
             builder.Services.AddSingleton<AuthService>();
+            builder.Services.AddSingleton<PackageService>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<LoginViewModel>();
+            builder.Services.AddSingleton<IndexPage>();
+            builder.Services.AddSingleton<IndexViewModel>();
+            builder.Services.AddSingleton<ProfilePage>();
+            builder.Services.AddSingleton<ProfileViewModel>();
+            builder.Services.AddSingleton<ViewDeliveryDetailsPage>();
+            builder.Services.AddSingleton<ViewDeliveryDetailsViewModel>();
 
             builder.Services.AddSingleton<IPlatformHttpMessageHandler>(sp =>
             {
@@ -34,7 +41,7 @@ namespace UI
 
             builder.Services.AddHttpClient("custom-httpclient", httpClient =>
             {
-                var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "http://192.168.0.182:8081" : "http://localhost:8081";
+                var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "http://192.168.0.100:8081" : "http://localhost:8081";
                 httpClient.BaseAddress = new Uri(baseAddress);
             });
 

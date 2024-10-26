@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oGcMS79ZSaw=",
+  "dgSpecHash": "21Z+GGlb8VM=",
   "success": true,
-  "projectFilePath": "D:\\Proiect\\scd-project\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Niculai Ilie-Traian\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\Niculai Ilie-Traian\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
