@@ -1,0 +1,32 @@
+﻿@page "/login"
+@inject AuthenticationService authService
+@inject NavigationManager navigation
+@attribute [AllowAnonymous]
+
+    <div class="d-flex flex-row justify-content-center align-items-center vh-100">
+        <EditForm Model="@loginForm" OnValidSubmit="Submit" class="card card-body shadow-lg border-0" style="max-width: 500px;">
+            <DataAnnotationsValidator />
+            <h3>Pagina autentificare</h3>
+            <hr>
+            <div class="form-floating mb-3">
+                <InputText @bind-Value="loginForm!.Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                <label for="floatingInput">Adresa de email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <InputText @bind-Value="loginForm!.Password" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                <label for="floatingPassword">Parola</label>
+            </div>
+        <Blazorise.ValidationSummary />
+            <button class="btn btn-sm btn-success mb-3">Autentifica-te!</button>
+            <p>Daca nu ai cont, creaza-ti unul <a href="/register" class="text-decoration-none">Apasand aici</a></p>
+        </EditForm>
+    </div>
+
+@code {
+    private LoginForm loginForm { get; set; }  = new LoginForm();
+
+    private async Task Submit()
+    {
+        await authService.LoginAsync(loginForm, navigation);
+    }
+}

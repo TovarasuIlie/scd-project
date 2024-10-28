@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj": {}
+    "D:\\Proiect\\scd-project\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj": {
+    "D:\\Proiect\\scd-project\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\Proiect\\scd-project\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\UI.csproj",
+        "projectPath": "D:\\Proiect\\scd-project\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\Niculai Ilie-Traian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\obj\\",
+        "outputPath": "D:\\Proiect\\scd-project\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -31,8 +31,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/B7xAzZRNIjjgN1faig9andjyUFggJ6eDYlF1ez9DW6n5yNSRTu/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-android34.0": {
@@ -67,31 +66,55 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
+            "Blazorise": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[8.0.92, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [
@@ -118,31 +141,55 @@
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
+            "Blazorise": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[8.0.92, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [
@@ -169,31 +216,55 @@
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
+            "Blazorise": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[8.0.92, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [
@@ -221,25 +292,49 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
+            "Blazorise": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[8.0.92, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [

@@ -1,0 +1,15 @@
+<div class="card border-0 shadow-lg p-3 mb-5 bg-body rounded">
+    <form [formGroup]="searchForm" (ngSubmit)="search()" class="card-body">
+        <div class="form-floating mb-3">
+            <input type="text" formControlName="awb" class="form-control" id="floatingInput"
+                placeholder="name@example.com">
+            <label for="floatingInput">Cauta AWB</label>
+        </div>
+        <div class="alert alert-danger" *ngIf="errorMessage.length">
+            <ul *ngFor="let error of errorMessage">
+                <li>{{ errorMessage }}</li>
+            </ul>
+        </div>
+        <button class="btn btn-success w-100" type="submit">Cauta!</button>
+    </form>
+</div>

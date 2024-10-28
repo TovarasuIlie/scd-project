@@ -1,0 +1,159 @@
+﻿@page "/delivery/view/{awb}"
+@using System.ComponentModel.DataAnnotations
+@inject DeliveryService deliveryService;
+@inject ManagerService managerService;
+
+<h1>Detalii livrare</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>AWB:</td>
+                        <td>@delivery.AWB</td>
+                    </tr>
+                    <tr>
+                        <td>Adresa de ridicare:</td>
+                        <td>@delivery.PickingAddress</td>
+                    </tr>
+                    <tr>
+                        <td>Pret:</td>
+                        <td>@delivery.Price lei</td>
+                    </tr>
+                    <tr>
+                        <td>Comanda creata in:</td>
+                        <td>@delivery.CreateDate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <button class="btn btn-success w-100" @onclick="ShowModal">Seteaza courier</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Adresa de livrare</th>
+                <th>Plata ramburs</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Package package in delivery.PackageList)
+            {
+                <tr>
+                    <td>@package.Id</td>
+                    <td>@package.DeliveryAddress</td>
+                    <td>
+                        @if(package.PayOnDelivery)
+                        {
+                            <div class="badge bg-success">
+                                Da
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="badge bg-danger">
+                                Nu
+                            </div>
+                        }
+                    </td>
+                    <td>
+                        @if(package.Status == "NEW")
+                        {
+                            <div class="badge bg-danger">
+                                Comanda noua
+                            </div>
+                        }
+                        @if (package.Status == "PENDING")
+                        {
+                            <div class="badge bg-info">
+                                Comanda in curs de livrare
+                            </div>
+                        }
+                        @if (package.Status == "DELIVERED")
+                        {
+                            <div class="badge bg-success">
+                                Comanda livrata!
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<Modal @ref="modal">
+    <ModalContent Centered Size="ModalSize.Default">
+        <ModalHeader>
+            <ModalTitle>Alege Curier</ModalTitle>
+            <CloseButton />
+        </ModalHeader>
+        <EditForm Model="setCourier" OnValidSubmit="SetCourierToDelivery">
+            <DataAnnotationsValidator />
+            <ModalBody>
+                <div class="form-floating">
+                    <select @bind="setCourier.courierID" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected value="0">Alege din urmatoarea lista</option>
+                        @foreach (Courier courier in couriers)
+                        {
+                            <option value="@courier.Id">@courier.Name - @courier.Id</option>
+                        }
+                    </select>
+                    <label for="floatingSelect">Alege Courier</label>
+                </div>
+                   <Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+            </ModalBody>
+            <ModalFooter>
+                <Button Color="Color.Secondary" Clicked="@HideModal">Close</Button>
+                <button class="btn btn-success" type="submit">Seteaza</button>
+            </ModalFooter>
+        </EditForm>
+    </ModalContent>
+</Modal>
+
+@code {
+    [Parameter]
+    public string? AWB { get; set; }
+    private Delivery delivery { get; set; } = new Delivery();
+    private List<Courier> couriers { get; set; } = new List<Courier>();
+
+    public class SetCourier
+    {
+        public string AWB { get; set; }
+
+        [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+        public int courierID { get; set; }
+    }
+
+    private SetCourier setCourier = new SetCourier();
+
+    private Modal modal;
+
+    private Task ShowModal()
+    {
+        return modal.Show();
+    }
+
+    private Task HideModal()
+    {
+        return modal.Hide();
+    }
+
+    private async Task SetCourierToDelivery()
+    {
+        await deliveryService.SetCourierToDelivery(AWB, setCourier.courierID);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        couriers = await managerService.GetAllCouriersAsync();
+        delivery = await deliveryService.GetDeliveryByAWB(AWB);
+    }
+}

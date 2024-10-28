@@ -12,60 +12,103 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UI
-build_property.ProjectDir = C:\Users\Niculai Ilie-Traian\Documents\Proiecte\scd-project\UI\
+build_property.RootNamespace = UI
+build_property.ProjectDir = D:\Proiect\scd-project\UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Proiect\scd-project\UI
+build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/App.xaml]
+[D:/Proiect/scd-project/UI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = UI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/AppShell.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.AppShell.xaml
-build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
-build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
-
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/MainPage.xaml]
+[D:/Proiect/scd-project/UI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = UI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Pages/IndexPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Pages.IndexPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\IndexPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\IndexPage.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/AuthenticationPages/Login.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoZW50aWNhdGlvblBhZ2VzXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Pages/LoginPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Pages.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/AuthenticationPages/Register.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoZW50aWNhdGlvblBhZ2VzXFJlZ2lzdGVyLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Pages/ProfilePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Pages.ProfilePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ProfilePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ProfilePage.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/CouriersPages/AllCouriers.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VyaWVyc1BhZ2VzXEFsbENvdXJpZXJzLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Pages/ViewDeliveryDetailsPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Pages.ViewDeliveryDetailsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ViewDeliveryDetailsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ViewDeliveryDetailsPage.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/CouriersPages/ViewCouriers.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VyaWVyc1BhZ2VzXFZpZXdDb3VyaWVycy5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Resources/Styles/Colors.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/DeliveryPages/AllDelivery.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxpdmVyeVBhZ2VzXEFsbERlbGl2ZXJ5LnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Niculai Ilie-Traian/Documents/Proiecte/scd-project/UI/Resources/Styles/Styles.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = UI.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+[D:/Proiect/scd-project/UI/Components/Pages/DeliveryPages/ViewDelivery.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxpdmVyeVBhZ2VzXFZpZXdEZWxpdmVyeS5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proiect/scd-project/UI/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proiect/scd-project/UI/Components/Routes.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proiect/scd-project/UI/Components/_Imports.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proiect/scd-project/UI/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-d0jsncqpy4
+
+[D:/Proiect/scd-project/UI/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-f272njtjyx

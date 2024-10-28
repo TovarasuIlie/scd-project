@@ -1,6 +1,5 @@
 package SCD.Backend.Models;
 
-import SCD.Backend.DTOs.PackageStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,10 +15,6 @@ public class Package {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
-
-    @ManyToOne
-    @JoinColumn(name = "courier_id")
-    private Courier courier;
 
     @Column(name = "created_on", nullable = false)
     private LocalDateTime createdOn;

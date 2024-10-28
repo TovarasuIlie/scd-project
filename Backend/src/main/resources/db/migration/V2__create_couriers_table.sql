@@ -3,5 +3,6 @@ CREATE TABLE IF NOT EXISTS couriers (
     name varchar(255) NOT NULL,
     email varchar(255) NOT NULL,
     password varchar(255) NOT NULL,
-    manager_id int(11) DEFAULT NULL
+    manager_id int(11) DEFAULT NULL,
+    role enum('ROLE_COURIER', 'ROLE_MANAGER') DEFAULT 'ROLE_COURIER'
 )

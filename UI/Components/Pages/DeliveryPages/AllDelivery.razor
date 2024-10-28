@@ -1,0 +1,36 @@
+﻿@page "/deliveries"
+@inject DeliveryService deliveryService;
+
+<h1>Livrari</h1>
+<hr>
+<div class="container">
+    @foreach (Delivery delivery in deliveries)
+    {
+        <div class="card border-0 shadow-lg mb-3 @(delivery.Courier is not null ? "bg-success bg-opacity-25" : "bg-warning bg-opacity-25")">
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h5 class="card-title">@delivery.AWB</h5>
+                        <p class="card-text fs-6 mb-1">Adresa de ridicare: @delivery.PickingAddress</p>
+                        <p class="card-text fs-6">Livrate de: @(delivery.Courier is null ? "-" : delivery.Courier.Name)</p>
+                        <p class="card-text fs-6">Plasata in: @delivery.CreateDate</p>
+                    </div>
+                    <div class="col">
+                        <a href="/delivery/view/@delivery.AWB" class="btn btn-sm btn-primary float-end">Detalii</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+    private List<Delivery> deliveries { get; set; } = new List<Delivery>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        deliveries = await deliveryService.GetAllDeliveryAsync();
+    }
+
+}

@@ -5,9 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Data
@@ -30,16 +32,21 @@ public class Courier implements UserDetails {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
+    @Enumerated(value = EnumType.STRING)
+    private Role role;
+
+    @OneToOne
+    @JoinColumn(name = "manager_id")
+    private Courier manager;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return Collections.singletonList(new SimpleGrantedAuthority(this.getRole().name()));
     }
 
     @Override
     public String getUsername() {
         return this.email;
     }
-
-//    @Column(name = "manager_id")
-//    private Courier manager;
 }

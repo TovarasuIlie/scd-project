@@ -1,0 +1,71 @@
+@if (delivery) {
+<h1>Detalii comanda</h1>
+<hr>
+<div class="row">
+    <div class="col-9">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>AWB:</td>
+                    <td>{{ delivery.awb }}</td>
+                </tr>
+                <tr>
+                    <td>Adresa de ridicare:</td>
+                    <td>{{ delivery.pickingAddress }}</td>
+                </tr>
+                <tr>
+                    <td>Pret:</td>
+                    <td>{{ delivery.price }} lei</td>
+                </tr>
+                <tr>
+                    <td>Comanda creata in:</td>
+                    <td>{{ delivery.createDate | date:"medium" }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col">
+        <button class="btn btn-danger w-100">Anuleaza comanda</button>
+    </div>
+</div>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Adresa de livrare</th>
+            <th>Plata ramburs</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let package of delivery.packageSet">
+            <td>{{ package.id }}</td>
+            <td>{{ package.deliveryAddress }}</td>
+            <td>
+                <div *ngIf="!package.payOnDelivery" class="badge bg-danger">
+                    Nu
+                </div>
+                <div *ngIf="package.payOnDelivery" class="badge bg-success">
+                    Da
+                </div>
+            </td>
+            <td>
+                <div *ngIf="package.status == 'NEW'" class="badge bg-danger">
+                    Comanda noua
+                </div>
+                <div *ngIf="package.status == 'PENDING'" class="badge bg-info">
+                    Comanda in curs de livrare
+                </div>
+                <div *ngIf="package.status == 'DELIVERED'" class="badge bg-success">
+                    Comanda livrata!
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+}
+@else {
+<div class="alert alert-danger">
+    <p>{{ errorMessage }}</p>
+</div>
+}

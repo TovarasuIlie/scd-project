@@ -1,7 +1,4 @@
-﻿using UI.Pages;
-using UI.Services;
-
-namespace UI
+﻿namespace UI
 {
     public partial class MainPage : ContentPage
     {
@@ -10,5 +7,4 @@ namespace UI
             InitializeComponent();
         }
     }
-
 }

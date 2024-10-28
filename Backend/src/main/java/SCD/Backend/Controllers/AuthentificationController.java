@@ -9,7 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/Authentification")
+@RequestMapping("api/Authentication")
+@CrossOrigin
 public class AuthentificationController {
 
     @Autowired
@@ -20,7 +21,7 @@ public class AuthentificationController {
         return authentificationService.registerNewAccount(registerDTO);
     }
 
-    @PostMapping("login-into")
+    @PostMapping("login-account")
     public ResponseEntity<?> loginInto(@RequestBody LoginDTO loginDTO) {
         return authentificationService.loginInAccount(loginDTO);
     }

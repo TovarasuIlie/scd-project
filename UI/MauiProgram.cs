@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
-using UI.Pages;
-//using UI.Platforms.Android;
+﻿using Blazorise;
+using Blazorise.Bootstrap5;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.Extensions.Logging;
+using UI.AuthenticationProvider;
 using UI.Services;
-using UI.ViewModel;
 
 namespace UI
 {
@@ -16,37 +17,30 @@ namespace UI
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            builder.Services.AddSingleton<AuthService>();
-            builder.Services.AddSingleton<PackageService>();
-            builder.Services.AddSingleton<LoginPage>();
-            builder.Services.AddSingleton<LoginViewModel>();
-            builder.Services.AddSingleton<IndexPage>();
-            builder.Services.AddSingleton<IndexViewModel>();
-            builder.Services.AddSingleton<ProfilePage>();
-            builder.Services.AddSingleton<ProfileViewModel>();
-            builder.Services.AddSingleton<ViewDeliveryDetailsPage>();
-            builder.Services.AddSingleton<ViewDeliveryDetailsViewModel>();
+            builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddBlazorise(options =>
+                            {
+                                options.Immediate = true;
+                            })
+                            .AddBootstrap5Providers();
 
-            builder.Services.AddSingleton<IPlatformHttpMessageHandler>(sp =>
-            {
-#if ANDROID
-                return new Platforms.Android.AndroidHttpMessageHandler();
-#else
-                return null!;
-#endif
-            });
+            builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+            builder.Services.AddAuthorizationCore();
 
-            builder.Services.AddHttpClient("custom-httpclient", httpClient =>
+            builder.Services.AddSingleton<AuthenticationService>();
+            builder.Services.AddSingleton<DeliveryService>();
+            builder.Services.AddSingleton<ManagerService>();
+
+            builder.Services.AddHttpClient("API", httpClient =>
             {
                 var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "http://192.168.0.100:8081" : "http://localhost:8081";
                 httpClient.BaseAddress = new Uri(baseAddress);
             });
-
 #if DEBUG
-            builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+    		builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

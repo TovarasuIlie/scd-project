@@ -1,0 +1,50 @@
+﻿@page "/couriers"
+@inject ManagerService managerService;
+@inject NavigationManager navigationManager;
+
+@attribute [Authorize]
+
+<h1>Curieri</h1>
+<hr>
+<div class="container">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nume</th>
+                <th>Nume Manager</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Courier courier in couriers)
+            {
+                <tr @onclick=@(e => GoToCourier(courier.Id))>
+                    <td>@courier.Id</td>
+                    <td>@courier.Name</td>
+                    @if (courier.Manager is not null)
+                    {
+                        <td>@courier.Manager.Name</td>
+                    }
+                    else
+                    {
+                        <td>-</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<Courier> couriers { get; set; } = new List<Courier>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        couriers = await managerService.GetCouriersAsync();
+    }
+
+    public void GoToCourier(int id)
+    {
+        navigationManager.NavigateTo("/couriers/view/" + id);
+    }
+}

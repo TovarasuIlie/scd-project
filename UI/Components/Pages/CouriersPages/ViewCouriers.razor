@@ -1,0 +1,100 @@
+﻿@page "/couriers/view/{id:int}"
+@using System.Security.Claims
+@inject ManagerService managerService;
+@inject NavigationManager navigationManager;
+@attribute [Authorize(Roles = "ROLE_MANAGER")]
+
+<h1>Detalii Curier</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card card-body border-0 shadow-lg mb-3">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td>@courier.Id</td>
+                        </tr>
+                        <tr>
+                            <td>Nume</td>
+                            <td>@courier.Name</td>
+                        </tr>
+                        <tr>
+                            @if (@courier.Manager is not null)
+                            {
+                                <td>Nume manager</td>
+                                <td>@courier.Manager.Name</td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <AuthorizeView>
+            <Authorized>
+                <div class="col-lg">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header">
+                            Admin Tools
+                        </div>
+                        <div class="card-body d-flex flex-column gap-3">
+                            @if(int.Parse(context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value) != courier.Id)
+                            {
+                                @if (courier.Role == "ROLE_COURIER")
+                                {
+                                    <button class="btn btn-warning w-100" @onclick="MakeManager">Seteaza ca si manager!</button>
+                                }
+                                @if (courier.Role == "ROLE_MANAGER")
+                                {
+                                    <button class="btn btn-warning w-100" @onclick="MakeCourier">Seteaza ca si courier!</button>
+                                }
+                                @if (courier.Manager is null)
+                                {
+                                    <button class="btn btn-success w-100" @onclick="MakeYouManager">Ia in custodie!</button>
+                                }
+                                @if (courier.Manager is not null)
+                                {
+                                    <button class="btn btn-danger w-100" @onclick="RemoveYouManager">Renunta la custodie!</button>
+                                }
+                            }
+                            <button class="btn btn-danger w-100">Sterge cont!</button>
+                        </div>
+                    </div>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int ID { get; set; }
+
+    private Courier courier { get; set; } = new Courier();
+
+    protected override async Task OnInitializedAsync()
+    {
+        courier = await managerService.GetCourierAsync(ID);
+    }
+
+    private async Task MakeCourier()
+    {
+        await managerService.PromoteToCourier(ID, navigationManager);
+    }
+
+    private async Task MakeManager()
+    {
+        await managerService.PromoteToManager(ID, navigationManager);
+    }
+
+    private async Task MakeYouManager()
+    {
+        await managerService.SetManager(ID, navigationManager);
+    }
+
+    private async Task RemoveYouManager()
+    {
+        await managerService.RemoveManager(ID, navigationManager);
+    }
+}

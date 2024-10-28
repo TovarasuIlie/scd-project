@@ -1,0 +1,41 @@
+﻿@page "/register"
+@inject AuthenticationService authService;
+@inject NavigationManager navigation;
+@attribute [AllowAnonymous]
+
+
+<div class="d-flex flex-row justify-content-center align-items-center vh-100">
+    <EditForm Model="@registerForm" OnValidSubmit="Submit" class="card card-body shadow-lg border-0" style="max-width: 500px;">
+        <DataAnnotationsValidator />
+        <h3>Pagina inregistrare</h3>
+        <hr>
+        <div class="form-floating mb-3">
+            <InputText @bind-Value="registerForm!.Name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Numele si Prenumele</label>
+        </div>
+        <div class="form-floating mb-3">
+            <InputText @bind-Value="registerForm!.Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Adresa de email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <InputText @bind-Value="registerForm!.Password" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Parola</label>
+        </div>
+        <div class="form-floating mb-3">
+            <InputText @bind-Value="registerForm!.ConfirmPassword" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Confirma Parola</label>
+        </div>
+        <Blazorise.ValidationSummary />
+        <button class="btn btn-sm btn-success mb-3">Inregistreaza-te!</button>
+        <p>Daca ai cont, autentifica-te <a href="/login" class="text-decoration-none">Apasand aici</a></p>
+    </EditForm>
+</div>
+
+@code {
+    private RegisterForm registerForm { get; set; } = new RegisterForm();
+
+    private async void Submit()
+    {
+        await authService.RegisterAsync(registerForm, navigation);
+    }
+}

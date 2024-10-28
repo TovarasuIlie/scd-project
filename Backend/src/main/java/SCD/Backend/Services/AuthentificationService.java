@@ -5,6 +5,7 @@ import SCD.Backend.DTOs.LoginDTO;
 import SCD.Backend.DTOs.RegisterDTO;
 import SCD.Backend.Models.APIMessage;
 import SCD.Backend.Models.Courier;
+import SCD.Backend.Models.Role;
 import SCD.Backend.Repositories.CourierRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,18 +39,19 @@ public class AuthentificationService {
             newCourier.setEmail(registerDTO.getEmail());
             newCourier.setPassword(passwordEncoder.encode(registerDTO.getPassword()));
             newCourier.setName(registerDTO.getName());
+            newCourier.setRole(Role.ROLE_COURIER);
             courierRepository.save(newCourier);
-            return ResponseEntity.ok(new APIMessage(HttpStatus.CREATED, "Cont inserat!"));
+            return ResponseEntity.ok(new APIMessage(HttpStatus.CREATED, "Contul a fost creat cu succes!"));
         } else {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(new APIMessage(HttpStatus.CONFLICT, "Un cont este deja inregistrat pe acest email!"));
         }
     }
 
     public ResponseEntity<?> loginInAccount(LoginDTO loginDTO) {
-        Optional<Courier> courier = courierRepository.findByEmail(loginDTO.getUsername());
-        if(!courier.isEmpty()) {
+        Optional<Courier> courier = courierRepository.findByEmail(loginDTO.getEmail());
+        if(courier.isPresent()) {
             try {
-                Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getUsername(), loginDTO.getPassword()));
+                Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getEmail(), loginDTO.getPassword()));
                 if(authentication.isAuthenticated()) {
                     String jwt = jwtService.generateToken(courier.get());
                     return ResponseEntity.ok(new LoggedUserDTO(courier.get().getId(), courier.get().getEmail(), courier.get().getName(), jwt));
@@ -60,6 +62,6 @@ public class AuthentificationService {
         } else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new APIMessage(HttpStatus.BAD_REQUEST, "Nu a fost gasit nici un email asociat contului!"));
         }
-        return null;
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new APIMessage(HttpStatus.BAD_REQUEST, "Nu a fost gasit nici un email asociat contului!"));
     }
 }

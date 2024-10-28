@@ -1,6 +1,6 @@
 package SCD.Backend.Controllers;
 
-import SCD.Backend.DTOs.NewPackageDTO;
+import SCD.Backend.DTOs.PackageDTO;
 import SCD.Backend.Services.PackageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,18 +13,19 @@ public class PackageController {
     @Autowired
     private PackageService packageService;
 
-    @GetMapping("get-all-deliveries")
-    public ResponseEntity<?> getAllDeliveries() {
-        return packageService.getAllDeliveries();
-    }
-
-    @GetMapping("get-delivery-by-id/{id}")
+    @GetMapping("get-package-by-id/{id}")
     public ResponseEntity<?> getDeliveryById(@PathVariable Integer id) {
         return packageService.getDeliveryByID(id);
     }
 
-    @PostMapping("create-delivery")
-    public ResponseEntity<?> createDelivery(@RequestBody NewPackageDTO newPackageDTO) {
-        return packageService.createNewDelivery(newPackageDTO);
+    @PutMapping("edit-package/{id}")
+    public ResponseEntity<?> editPackageDetails(@PathVariable Integer id, @RequestBody PackageDTO editPackage) {
+        return packageService.editPackage(id, editPackage);
     }
+
+    @DeleteMapping("delete-package/{id}")
+    public ResponseEntity<?> deletePackage(@PathVariable Integer id) {
+        return packageService.deletePackage(id);
+    }
+
 }
