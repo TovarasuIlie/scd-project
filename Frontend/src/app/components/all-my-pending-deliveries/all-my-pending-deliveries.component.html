@@ -1,0 +1,27 @@
+<h1>Lista cu Pachetele in asteptare tale</h1>
+<hr>
+<div *ngIf="deliveries" class="container">
+    <div *ngFor="let delivery of deliveries" class="card card-body border-0 shadow mb-3" [routerLink]="['/vezi-coletul', delivery.awb]">
+        <h5>{{ delivery.awb }}</h5>
+        <hr>
+        <p *ngIf="delivery.courier" class="mb-1">Livrat de curierul: {{ delivery.courier.name }}</p>
+        <p class="mb-1">Adresa de livrare: {{ delivery.pickingAddress }}</p>
+        <p class="mb-1">Creat la data de: {{ delivery.createDate | date }}</p>
+        <div>
+            <div *ngIf="delivery.status == 'NEW'" class="badge bg-danger">
+                Comanda noua
+            </div>
+            <div *ngIf="delivery.status == 'PENDING'" class="badge bg-info">
+                Comanda in curs de livrare
+            </div>
+            <div *ngIf="delivery.status == 'DELIVERED'" class="badge bg-success">
+                Comanda livrata!
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!deliveries.length" class="container">
+    <div class="alert alert-danger">
+        Nu a fost gasit nici un pachet.
+    </div>
+</div>

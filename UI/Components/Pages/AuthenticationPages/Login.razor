@@ -11,10 +11,12 @@
             <div class="form-floating mb-3">
                 <InputText @bind-Value="loginForm!.Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
                 <label for="floatingInput">Adresa de email</label>
+                <ValidationMessage class="text-danger" For="@(() => loginForm.Email)"></ValidationMessage>
             </div>
             <div class="form-floating mb-3">
                 <InputText @bind-Value="loginForm!.Password" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
                 <label for="floatingPassword">Parola</label>
+                <ValidationMessage class="text-danger" For="@(() => loginForm.Password)"></ValidationMessage>
             </div>
         <Blazorise.ValidationSummary />
             <button class="btn btn-sm btn-success mb-3">Autentifica-te!</button>

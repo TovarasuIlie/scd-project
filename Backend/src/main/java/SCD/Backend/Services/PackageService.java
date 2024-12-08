@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -38,5 +39,10 @@ public class PackageService {
             return ResponseEntity.status(HttpStatus.OK).body(new APIMessage(HttpStatus.OK, "Detaliile pachetului au fost editate cu succes!"));
         }
         return ResponseEntity.status(HttpStatus.OK).body(new APIMessage(HttpStatus.OK, "Pachetul nu a fost gasit!"));
+    }
+    @Transactional
+    public ResponseEntity<?> setPackageStatus(Package pk) {
+        packageRepository.save(pk);
+        return ResponseEntity.ok(new APIMessage(HttpStatus.ACCEPTED, "Statusul a fost modificat cu succes!"));
     }
 }

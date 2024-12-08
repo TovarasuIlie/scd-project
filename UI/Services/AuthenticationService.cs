@@ -77,6 +77,7 @@ namespace UI.Services
                 Email = claims.First(_ => _.Type == "email").Value,
                 Name = claims.First(_ => _.Type == "name").Value,
                 Role = claims.First(_ => _.Type == "role").Value,
+                Expiration = Int32.Parse(claims.First(_ => _.Type == "exp").Value),
                 Jwt = jwt
             };
         }

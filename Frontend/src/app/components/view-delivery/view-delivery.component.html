@@ -17,6 +17,24 @@
                     <td>Pret:</td>
                     <td>{{ delivery.price }} lei</td>
                 </tr>
+                <tr *ngIf="delivery.courier">
+                    <td>Nume Curier</td>
+                    <td>{{ delivery.courier.name }}</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <div *ngIf="delivery.status == 'NEW'" class="badge bg-danger">
+                            Comanda noua
+                        </div>
+                        <div *ngIf="delivery.status == 'PENDING'" class="badge bg-info">
+                            Comanda in curs de livrare
+                        </div>
+                        <div *ngIf="delivery.status == 'DELIVERED'" class="badge bg-success">
+                            Comanda livrata!
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                     <td>Comanda creata in:</td>
                     <td>{{ delivery.createDate | date:"medium" }}</td>
@@ -25,7 +43,7 @@
         </table>
     </div>
     <div class="col">
-        <button class="btn btn-danger w-100">Anuleaza comanda</button>
+        <button [routerLink]="['/editeza-coletul', delivery.awb]" class="btn btn-danger w-100" [disabled]="delivery.status !== 'NEW'">Editeaza detalii comanda</button>
     </div>
 </div>
 <table class="table">

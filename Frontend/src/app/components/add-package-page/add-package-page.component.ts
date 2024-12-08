@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { DeliveryService } from '../../services/delivery.service';
+import { Delivery } from '../../models/delivery';
 
 @Component({
   selector: 'app-add-package-page',
@@ -13,6 +14,7 @@ import { DeliveryService } from '../../services/delivery.service';
 export class AddPackagePageComponent implements OnInit {
   addForm: FormGroup = new FormGroup({});
   errorMessages: string[] = [];
+  delivery!: Delivery; 
 
   constructor(private fb: FormBuilder, private deliveryService: DeliveryService) {}
 
@@ -23,6 +25,8 @@ export class AddPackagePageComponent implements OnInit {
   initializeForm() {
     this.addForm = this.fb.group({
       pickingAddress: [null, [Validators.required]],
+      email: [null, [Validators.required, Validators.email]],
+      phoneNumber: [null, [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       price: [null, [Validators.required]],
       packages: this.fb.array([])
     })
@@ -39,6 +43,7 @@ export class AddPackagePageComponent implements OnInit {
   addItem() {
     this.packages.push(this.fb.group({
       deliveryAddress: [null, [Validators.required]],
+      phoneNumber: [null, [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       payOnDelivery: ["false", [Validators.required]],
     }));
   }
@@ -50,8 +55,11 @@ export class AddPackagePageComponent implements OnInit {
         this.deliveryService.addNewOrder(this.addForm.value).subscribe({
           next: (value) => {
             this.addForm.reset();
+            console.log(value);
+            this.delivery = value;
           },
           error: (err) => {
+            this.errorMessages.push(err.error.message);
             console.log(err);
           }
         });

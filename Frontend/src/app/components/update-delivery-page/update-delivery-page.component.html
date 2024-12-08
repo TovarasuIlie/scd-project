@@ -1,0 +1,72 @@
+
+@if (delivery) {
+<h1>Editeaza comanda {{ delivery.awb }}</h1>
+<hr>
+<div *ngIf="errorMessages.length" class="alert alert-danger">
+    <ul *ngFor="let error of errorMessages">
+        <li>{{ error }}</li>
+    </ul>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="editDelivery()">
+    <div class="row">
+        <div class="col-9">
+            <div class="form-floating mb-3">
+                <input formControlName="pickingAddress" type="text" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
+                <label for="floatingInput">Adresa de livrare</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com" disabled
+                    [value]="delivery.email">
+                <label for="floatingInput">Adresa de email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="phoneNumber" type="text" class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Numarul dumneavoastra de
+                    telefon</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="price" type="number" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Pret</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="specialKey" type="text" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Cheie speciala</label>
+                <p class="text-danger fw-semibold px-3">Codul pentru a putea edita aceasta livrare ti-a fost trimis pe email-ul pe care ai facut comanda. Acesta este de forma XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
+            </div>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-success w-100">Editeaza detalii
+                comanda</button>
+        </div>
+    </div>
+    <div formArrayName="packages">
+        <div class="container" *ngFor="let package of packages.controls; let i = index" [formGroupName]="i">
+            <div class="card card-body border-0 shadow-lg mb-3">
+                <h3>Pachet {{ i + 1 }}</h3>
+                <div class="form-floating mb-3">
+                    <input formControlName="deliveryAddress" type="text" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Adresa de livrare</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input formControlName="phoneNumber" type="text" class="form-control" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Numarul dumneavoastra de
+                        telefon</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+}
+@else {
+<div class="alert alert-danger">
+    <p>{{ errorMessage }}</p>
+</div>
+}

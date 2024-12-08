@@ -13,6 +13,9 @@ namespace UI.Models
         [JsonPropertyName("deliveryAddress")]
         public string DeliveryAddress { get; set; }
 
+        [JsonPropertyName("phoneNumber")]
+        public string PhoneNumber { get; set; }
+
         [JsonPropertyName("payOnDelivery")]
         public bool PayOnDelivery { get; set; }
 

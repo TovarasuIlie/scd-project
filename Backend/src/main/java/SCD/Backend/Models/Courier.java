@@ -1,5 +1,6 @@
 package SCD.Backend.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -38,6 +39,7 @@ public class Courier implements UserDetails {
 
     @OneToOne
     @JoinColumn(name = "manager_id")
+    @JsonIgnoreProperties({"manager"})
     private Courier manager;
 
     @Override

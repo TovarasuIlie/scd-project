@@ -16,66 +16,29 @@
                             <h5 class="card-title">@delivery.AWB</h5>
                             <p class="card-text fs-6 mb-1">Adresa de ridicare: @delivery.PickingAddress</p>
                             <p class="card-text fs-6">Plasata in: @delivery.CreateDate</p>
+                            <p class="card-text fs-6">
+                                @if (delivery.Status == "NEW")
+                                {
+                                    <div class="badge bg-danger">
+                                        Colet nou
+                                    </div>
+                                }
+                                @if (delivery.Status == "PENDING")
+                                {
+                                    <div class="badge bg-warning">
+                                        Colet in curs
+                                    </div>
+                                }
+                                @if (delivery.Status == "DELIVERED")
+                                {
+                                    <div class="badge bg-success">
+                                        Livrat
+                                    </div>
+                                }
+                            </p>
                         </div>
                         <div class="col">
                             <a href="/delivery/view/@delivery.AWB" class="btn btn-sm btn-primary float-end">Detalii</a>
-                        </div>
-                    </div>
-                    <div class="accordion accordion-flush" id="accordionFlush-@delivery.AWB">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@delivery.AWB" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Pachete
-                                </button>
-                            </h2>
-                            <div id="collapse-@delivery.AWB" class="accordion-collapse collapse" aria-labelledby="collapse-@delivery.AWB" data-bs-parent="#accordionFlush-@delivery.AWB">
-                                <div class="accordion-body">
-                                    <table class="table">
-                                        <tbody>
-                                            @foreach(Package package in delivery.PackageList)
-                                            {
-                                                <tr>
-                                                    <td>@package.DeliveryAddress</td>
-                                                    <td>
-                                                        @if(package.PayOnDelivery)
-                                                        {
-                                                            <div class="badge bg-info">
-                                                                Platita
-                                                            </div>
-                                                        } 
-                                                        else
-                                                        {
-                                                            <div class="badge bg-info">
-                                                                Cu plata la livrare
-                                                            </div>
-                                                        }
-                                                    </td>
-                                                    <td>
-                                                        @if(package.Status == "NEW")
-                                                        {
-                                                            <div class="badge bg-danger">
-                                                                Colet nou
-                                                            </div>
-                                                        }
-                                                        @if (package.Status == "PENDING")
-                                                        {
-                                                            <div class="badge bg-warning">
-                                                                Colet in curs
-                                                            </div>
-                                                        }
-                                                        @if (package.Status == "DELIVERED")
-                                                        {
-                                                            <div class="badge bg-success">
-                                                                Livrat
-                                                            </div>
-                                                        }
-                                                    </td>
-                                                </tr>
-                                            }
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

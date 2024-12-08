@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <AuthorizeView>
             <Authorized>
-                <a class="navbar-brand fs-6" href="">Salut, @context.User.Identity.Name</a>
+                <a class="navbar-brand" style="font-size: 12px" href="">Salut, @context.User.Identity.Name</a>
             </Authorized>
         </AuthorizeView>
     </div>
@@ -40,7 +40,7 @@
         </AuthorizeView>
         <AuthorizeView>
             <Authorized>
-                <div class="nav-item px-3">
+                <div class="nav-item px-3" style="cursor: pointer;">
                     <NavLink class="nav-link" @onclick=Logout>
                         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Iesi din cont
                     </NavLink>

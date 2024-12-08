@@ -9,4 +9,5 @@ import lombok.*;
 public class PackageDTO {
     private String deliveryAddress;
     private boolean payOnDelivery;
+    private String phoneNumber;
 }

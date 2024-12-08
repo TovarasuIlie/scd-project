@@ -33,7 +33,11 @@ public class SecurityConfig implements WebMvcConfigurer {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req -> {
-                            req.anyRequest().permitAll();
+                            req.requestMatchers("api/Authentication/**", "api/Delivery/insert-new-delivery", "api/Delivery/edit-delivery", "api/Delivery/get-delivery/**", "api/Courier/**", "api/Delivery/get-customer-deliveries/**", "api/Delivery/get-customer-pending-deliveries/**").permitAll();
+                            req.requestMatchers("api/Delivery/get-my-deliveries").hasRole("COURIER");
+                            req.requestMatchers("api/Manager/**", "api/Delivery/delete-delivery/**", "api/Delivery/set-courier-to-delivery/**", "api/Delivery/remove-courier/**", "api/Delivery/get-delivery-for/**").hasRole("MANAGER");
+                            req.requestMatchers("api/Package/**", "api/Delivery/get-all-deliveries", "api/Delivery/set-delivery-status").hasAnyRole("COURIER", "MANAGER");
+                            req.anyRequest().denyAll();
                         }
                 )
                 .userDetailsService(userDetailsServiceImp)

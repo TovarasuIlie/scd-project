@@ -12,18 +12,22 @@
         <div class="form-floating mb-3">
             <InputText @bind-Value="registerForm!.Name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
             <label for="floatingInput">Numele si Prenumele</label>
+            <ValidationMessage class="text-danger" For="@(() => registerForm.Name)"></ValidationMessage>
         </div>
         <div class="form-floating mb-3">
             <InputText @bind-Value="registerForm!.Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
             <label for="floatingInput">Adresa de email</label>
+            <ValidationMessage class="text-danger" For="@(() => registerForm.Email)"></ValidationMessage>
         </div>
         <div class="form-floating mb-3">
             <InputText @bind-Value="registerForm!.Password" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
             <label for="floatingPassword">Parola</label>
+            <ValidationMessage class="text-danger" For="@(() => registerForm.Password)"></ValidationMessage>
         </div>
         <div class="form-floating mb-3">
             <InputText @bind-Value="registerForm!.ConfirmPassword" type="password" class="form-control" id="floatingPassword" placeholder="Password" />
             <label for="floatingPassword">Confirma Parola</label>
+            <ValidationMessage class="text-danger" For="@(() => registerForm.ConfirmPassword)"></ValidationMessage>
         </div>
         <Blazorise.ValidationSummary />
         <button class="btn btn-sm btn-success mb-3">Inregistreaza-te!</button>

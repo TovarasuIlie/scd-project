@@ -20,5 +20,10 @@ spring:
     password:
     schemas: delivery-app
     url: jdbc:mysql://localhost:3306/delivery-app
+  mail:
+    hostname: smtp-relay.brevo.com
+    port: 587
+    username: 797207001@smtp-brevo.com
+    password: 7fGDbFNKgYZzcRMW
 server:
   port: 8081

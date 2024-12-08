@@ -1,0 +1,15 @@
+<h1>Lista cu Courieri</h1>
+<hr>
+<div class="card card-body border-0 shadow">
+    <table class="table text-center">
+        <tbody>
+            <tr *ngFor="let courier of couriers">
+                <td>{{ courier.name }}</td>
+                <td>{{ courier.manager.name }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total curieri: <b>{{ couriers.length }}</b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

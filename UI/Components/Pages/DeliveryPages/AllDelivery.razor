@@ -14,6 +14,26 @@
                         <p class="card-text fs-6 mb-1">Adresa de ridicare: @delivery.PickingAddress</p>
                         <p class="card-text fs-6">Livrate de: @(delivery.Courier is null ? "-" : delivery.Courier.Name)</p>
                         <p class="card-text fs-6">Plasata in: @delivery.CreateDate</p>
+                        <p class="card-text fs-6">
+                            @if (delivery.Status == "NEW")
+                            {
+                                <div class="badge bg-danger">
+                                    Colet nou
+                                </div>
+                            }
+                            @if (delivery.Status == "PENDING")
+                            {
+                                <div class="badge bg-warning">
+                                    Colet in curs
+                                </div>
+                            }
+                            @if (delivery.Status == "DELIVERED")
+                            {
+                                <div class="badge bg-success">
+                                    Livrat
+                                </div>
+                            }
+                        </p>
                     </div>
                     <div class="col">
                         <a href="/delivery/view/@delivery.AWB" class="btn btn-sm btn-primary float-end">Detalii</a>

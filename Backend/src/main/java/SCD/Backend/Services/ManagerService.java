@@ -24,7 +24,9 @@ public class ManagerService {
     }
 
     public ResponseEntity<?> getAllCouriers() {
-        return ResponseEntity.ok(courierRepository.findAllByRole(Role.ROLE_COURIER));
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Optional<Courier> you = courierRepository.findByEmail(authentication.getName());
+        return ResponseEntity.ok(courierRepository.findAllCouriersWithoutPendingPackages(you.get().getId()));
     }
 
 
@@ -36,7 +38,7 @@ public class ManagerService {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Optional<Courier> you = courierRepository.findByEmail(authentication.getName());
         Courier courier = courierRepository.findById(id).get();
-        if(you.equals(courier)) {
+        if(!you.get().equals(courier)) {
             courier.setManager(null);
             courier.setRole(Role.ROLE_MANAGER);
             courierRepository.save(courier);
@@ -51,7 +53,7 @@ public class ManagerService {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Optional<Courier> you = courierRepository.findByEmail(authentication.getName());
         Courier courier = courierRepository.findById(id).get();
-        if(you.equals(courier)) {
+        if(!you.get().equals(courier)) {
             courier.setManager(null);
             courier.setRole(Role.ROLE_COURIER);
             courierRepository.save(courier);

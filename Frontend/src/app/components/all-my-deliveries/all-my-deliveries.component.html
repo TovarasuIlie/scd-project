@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col">
+        <h1>Lista cu Pachetele tale</h1>
+    </div>
+    <div class="col">
+        <button class="btn btn-sm btn-info float-end" *ngIf="email" [routerLink]="['/coletele-mele-in-asteptare', email]">Comenzi in asteptare</button>
+    </div>
+</div>
+<hr>
+@if(!email) {
+    <div class="card card-body border-0 shadow">
+        <form [formGroup]="form" (ngSubmit)="find()">
+            <div class="form-floating mb-3">
+                <input formControlName="email" type="text" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
+                <label for="floatingInput">Adresa de email</label>
+            </div>
+            <div class="alert alert-danger" *ngIf="errorMessage">
+                <ul>
+                    <li>{{ errorMessage }}</li>
+                </ul>
+            </div>
+            <button class="btn btn-success w-100">Gaseste livrari!</button>
+        </form>
+    </div>
+}
+@else 
+{
+    <div *ngIf="deliveries" class="container">
+        <div *ngFor="let delivery of deliveries" class="card card-body border-0 shadow mb-3" [routerLink]="['/vezi-coletul', delivery.awb]">
+            <h5>{{ delivery.awb }}</h5>
+            <hr>
+            <p *ngIf="delivery.courier" class="mb-1">Livrat de curierul: {{ delivery.courier.name }}</p>
+            <p class="mb-1">Adresa de livrare: {{ delivery.pickingAddress }}</p>
+            <p class="mb-1">Creat la data de: {{ delivery.createDate | date }}</p>
+            <div>
+                <div *ngIf="delivery.status == 'NEW'" class="badge bg-danger">
+                    Comanda noua
+                </div>
+                <div *ngIf="delivery.status == 'PENDING'" class="badge bg-info">
+                    Comanda in curs de livrare
+                </div>
+                <div *ngIf="delivery.status == 'DELIVERED'" class="badge bg-success">
+                    Comanda livrata!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!deliveries.length" class="container">
+        <div class="alert alert-danger">
+            Nu a fost gasit nici un pachet.
+        </div>
+    </div>
+}

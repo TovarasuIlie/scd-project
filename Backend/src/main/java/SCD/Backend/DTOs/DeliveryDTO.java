@@ -14,6 +14,8 @@ import java.util.Set;
 @Getter
 public class DeliveryDTO {
     private String pickingAddress;
+    private String phoneNumber;
+    private String email;
     private BigDecimal price;
     private Set<PackageDTO> packages;
 }

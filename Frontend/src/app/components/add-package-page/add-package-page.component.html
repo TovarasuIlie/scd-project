@@ -1,55 +1,75 @@
 <div class="card border-0 shadow-lg p-3 mb-5 bg-body rounded">
-    <form [formGroup]="addForm" (ngSubmit)="add()" class="card-body">
-        <div class="form-floating mb-3">
-            <input formControlName="pickingAddress" type="text" class="form-control" id="floatingInput"
-                placeholder="name@example.com">
-            <label for="floatingInput">Adresa de livrare</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input formControlName="price" type="number" class="form-control" id="floatingPassword"
-                placeholder="Password">
-            <label for="floatingPassword">Pret</label>
-        </div>
-        <h2>Detalii pachete</h2>
-        <hr>
-        <div formArrayName="packages">
-            <div class="container" *ngFor="let package of packages.controls; let i = index" [formGroupName]="i">
-                <div class="card border-0">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col">
-                                Pachet {{ i + 1 }}
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-sm btn-outline-danger float-end"
-                                    (click)="deleteItem(i)">Sterge</button>
+        <form *ngIf="!delivery" [formGroup]="addForm" (ngSubmit)="add()" class="card-body">
+            <div class="form-floating mb-3">
+                <input formControlName="pickingAddress" type="text" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
+                <label for="floatingInput">Adresa de ridicare</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="email" type="email" class="form-control"
+                    id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Adresa de email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="phoneNumber" type="text" class="form-control"
+                    id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Numarul dumneavoastra de telefon</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input formControlName="price" type="number" class="form-control" id="floatingPassword"
+                    placeholder="Password">
+                <label for="floatingPassword">Pret</label>
+            </div>
+            <h2>Detalii pachete</h2>
+            <hr>
+            <div formArrayName="packages">
+                <div class="container" *ngFor="let package of packages.controls; let i = index" [formGroupName]="i">
+                    <div class="card border-0">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col">
+                                    Pachet {{ i + 1 }}
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-sm btn-outline-danger float-end"
+                                        (click)="deleteItem(i)">Sterge</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body mb-3">
-                        <div class="form-floating mb-3">
-                            <input formControlName="deliveryAddress" type="text" class="form-control"
-                                id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Adresa de livrare</label>
-                        </div>
-                        <div class="form-floating">
-                            <select formControlName="payOnDelivery" class="form-select" id="floatingSelect"
-                                aria-label="Floating label select example">
-                                <option value="false" selected>Ramburs</option>
-                                <option value="true">Cu cardul</option>
-                            </select>
-                            <label for="floatingSelect">Tipul de plata</label>
+                        <div class="card-body mb-3">
+                            <div class="form-floating mb-3">
+                                <input formControlName="deliveryAddress" type="text" class="form-control"
+                                    id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Adresa de livrare</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input formControlName="phoneNumber" type="text" class="form-control"
+                                    id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Numarul de telefon destinatar</label>
+                            </div>
+                            <div class="form-floating">
+                                <select formControlName="payOnDelivery" class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option value="false" selected>Ramburs</option>
+                                    <option value="true">Cu cardul</option>
+                                </select>
+                                <label for="floatingSelect">Tipul de plata</label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="alert alert-danger" *ngIf="errorMessages.length">
-            <ul *ngFor="let error of errorMessages">
-                <li>{{ error }}</li>
-            </ul>
-        </div>
-        <button class="btn btn-primary" (click)="addItem()" type="button">Adauga pachet</button>
-        <button class="btn btn-success" type="submit">Adauga pachet</button>
-    </form>
+            <div class="alert alert-danger" *ngIf="errorMessages.length">
+                <ul *ngFor="let error of errorMessages">
+                    <li>{{ error }}</li>
+                </ul>
+            </div>
+            <button class="btn btn-primary" (click)="addItem()" type="button">Adauga pachet</button>
+            <button class="btn btn-success" type="submit">Trimite comanda</button>
+        </form>
+    <div *ngIf="delivery" class="alert alert-success">
+        <p>Comanda a fost plasata cu succes!</p>
+        <p>AWB: {{ delivery.awb }}</p>
+        <p>Cod Special: {{ delivery.specialKey }}</p>
+    </div>
 </div>

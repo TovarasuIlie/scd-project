@@ -18,5 +18,6 @@ namespace UI.Models.Authentication
 
         [JsonPropertyName("jwt")]
         public string Jwt { get; set; }
+        public Int32 Expiration { get; set; }
     }
 }

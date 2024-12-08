@@ -19,18 +19,26 @@ namespace UI.AuthenticationProvider
                     return await Task.FromResult(new AuthenticationState(anonymous));
                 }
                 var loggedUser = JsonSerializer.Deserialize<LoggedUser>(loggedUserString);
-                List<Claim> claims = new List<Claim>()
+                if (loggedUser.Expiration > DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds)
                 {
-                    new Claim(ClaimTypes.NameIdentifier, loggedUser.Id.ToString()),
-                    new Claim(ClaimTypes.Email, loggedUser.Email!),
-                    new Claim(ClaimTypes.Name, loggedUser.Name!),
-                    new Claim(ClaimTypes.Role, loggedUser.Role!),
-                    new Claim("Jwt", loggedUser.Jwt!)
-                };
+                    List<Claim> claims = new List<Claim>()
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, loggedUser.Id.ToString()),
+                        new Claim(ClaimTypes.Email, loggedUser.Email!),
+                        new Claim(ClaimTypes.Name, loggedUser.Name!),
+                        new Claim(ClaimTypes.Role, loggedUser.Role!),
+                        new Claim("Expiration", loggedUser.Expiration.ToString()!),
+                        new Claim("Jwt", loggedUser.Jwt!)
+                    };
 
-                var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(claims, "CustomAuth"));
+                    var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(claims, "CustomAuth"));
 
-                return await Task.FromResult(new AuthenticationState(claimsPrincipal));
+                    return await Task.FromResult(new AuthenticationState(claimsPrincipal));
+                }
+                else
+                {
+                    return await Task.FromResult(new AuthenticationState(anonymous));
+                }
             }
             catch
             {
@@ -51,6 +59,7 @@ namespace UI.AuthenticationProvider
                     new Claim(ClaimTypes.Email, loggedUser.Email!),
                     new Claim(ClaimTypes.Name, loggedUser.Name!),
                     new Claim(ClaimTypes.Role, loggedUser.Role!),
+                    new Claim("Expiration", loggedUser.Expiration.ToString()!),
                     new Claim("Jwt", loggedUser.Jwt!)
                 };
                 claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(claims));

@@ -12,13 +12,14 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
-@Table(name = "orders")
+@Table(name = "deliveries")
 public class Delivery {
     @Id
     @GeneratedValue(generator = "generate_awb")
@@ -29,10 +30,19 @@ public class Delivery {
     @Column(name = "picking_address")
     private String pickingAddress;
 
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "phone_number")
+    private String phoneNumber;
+
+    @Column(name = "special_key")
+    private String specialKey;
+
     @OneToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "order_package",
-            joinColumns = @JoinColumn(name = "order_awb", referencedColumnName = "awb"),
+            name = "delivery_packages",
+            joinColumns = @JoinColumn(name = "delivery_awb", referencedColumnName = "awb"),
             inverseJoinColumns = @JoinColumn(name = "package_id", referencedColumnName = "id")
     )
     private Set<Package> packageSet = new HashSet<>();
@@ -40,6 +50,10 @@ public class Delivery {
     @ManyToOne
     @JoinColumn(name = "courier_id")
     private Courier courier;
+
+    @Column(name = "status", nullable = false)
+    @Enumerated(value = EnumType.STRING)
+    private PackageStatus status;
 
     @Column(name = "create_date")
     private LocalDateTime createDate;

@@ -25,6 +25,9 @@ public class Package {
     @Column(name = "pay_on_delivery", nullable = false)
     private boolean payOnDelivery;
 
+    @Column(name = "phone_number", nullable = false)
+    private String phoneNumber;
+
     @Column(name = "status", nullable = false)
     @Enumerated(value = EnumType.STRING)
     private PackageStatus status;

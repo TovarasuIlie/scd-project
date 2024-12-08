@@ -32,10 +32,11 @@ namespace UI
             builder.Services.AddSingleton<AuthenticationService>();
             builder.Services.AddSingleton<DeliveryService>();
             builder.Services.AddSingleton<ManagerService>();
+            builder.Services.AddSingleton<PackageService>();
 
             builder.Services.AddHttpClient("API", httpClient =>
             {
-                var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "http://192.168.0.100:8081" : "http://localhost:8081";
+                var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "http://192.168.10.2:8081" : "http://localhost:8081";
                 httpClient.BaseAddress = new Uri(baseAddress);
             });
 #if DEBUG

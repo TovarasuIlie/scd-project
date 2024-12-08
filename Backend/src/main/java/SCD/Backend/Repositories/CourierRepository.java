@@ -19,4 +19,7 @@ public interface CourierRepository extends JpaRepository<Courier, Integer> {
     void updateAllCouriersManager(@Param("id") Integer id);
 
     List<Courier> findAllByRole(Role role);
+
+    @Query(value = "SELECT couriers.* FROM couriers LEFT JOIN deliveries ON couriers.id = deliveries.courier_id WHERE couriers.role = \"ROLE_COURIER\" AND couriers.manager_id = :manager_id GROUP BY IFNULL(deliveries.courier_id, UUID()) HAVING COUNT(CASE WHEN deliveries.status != \"DELIVERED\" THEN deliveries.awb END) < 2", nativeQuery = true)
+    List<Courier> findAllCouriersWithoutPendingPackages(@Param("manager_id") Integer managerId);
 }

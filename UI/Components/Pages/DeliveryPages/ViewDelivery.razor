@@ -1,7 +1,10 @@
 ﻿@page "/delivery/view/{awb}"
 @using System.ComponentModel.DataAnnotations
+@using System.Security.Claims
 @inject DeliveryService deliveryService;
 @inject ManagerService managerService;
+@inject PackageService packageService;
+@inject NavigationManager navigationManager;
 
 <h1>Detalii livrare</h1>
 <hr>
@@ -26,11 +29,67 @@
                         <td>Comanda creata in:</td>
                         <td>@delivery.CreateDate</td>
                     </tr>
+                    @if(delivery.Courier is not null)
+                    {
+                        <tr>
+                            <td>Nume curier:</td>
+                            <td>@delivery.Courier.Name</td>
+                        </tr>
+                    }
+                    <tr>
+                        <td>Status</td>
+                        <td>
+                            @if (delivery.Status == "NEW")
+                            {
+                                <div class="badge bg-danger">
+                                    Comanda noua
+                                </div>
+                            }
+                            @if (delivery.Status == "PENDING")
+                            {
+                                <div class="badge bg-info">
+                                    Comanda in curs de livrare
+                                </div>
+                            }
+                            @if (delivery.Status == "DELIVERED")
+                            {
+                                <div class="badge bg-success">
+                                    Comanda livrata!
+                                </div>
+                            }
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        <div class="col">
-            <button class="btn btn-success w-100" @onclick="ShowModal">Seteaza courier</button>
+        <div class="col d-flex flex-column gap-2">
+            <AuthorizeView>
+                <Authorized>
+                    @if (context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value == "ROLE_MANAGER")
+                    {
+                        @if (delivery.Courier is not null)
+                        {
+                            <button class="btn btn-danger w-100 @(delivery.Status != "DELIVERED" ? "" : "disabled" )" @onclick="RemoveCourier">Sterge courier</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-success w-100" @onclick="ShowModal">Seteaza courier</button>
+                            <button class="btn btn-danger w-100" @onclick="Delete">Sterge Livrarea</button>
+                        }
+                    }
+                    @if (delivery.Courier is not null)
+                    {
+                        @if (delivery.Status == "NEW")
+                        {
+                            <button class="btn btn-info w-100" @onclick=@(e => ChangeDeliveryStatus(delivery, "PENDING"))>Schimba status</button>
+                        }
+                        @if (delivery.Status == "PENDING")
+                        {
+                            <button class="btn btn-warning w-100" @onclick=@(e => ChangeDeliveryStatus(delivery, "DELIVERED"))>Schimba status</button>
+                        }
+                    }
+                </Authorized>
+            </AuthorizeView>
         </div>
     </div>
     <table class="table">
@@ -40,6 +99,7 @@
                 <th>Adresa de livrare</th>
                 <th>Plata ramburs</th>
                 <th>Status</th>
+                <th>Actiuni</th>
             </tr>
         </thead>
         <tbody>
@@ -80,6 +140,20 @@
                             <div class="badge bg-success">
                                 Comanda livrata!
                             </div>
+                        }
+                    </td>
+                    <td>
+                        @if (package.Status == "NEW")
+                        {
+                            <button class="btn btn-info w-100" @onclick=@(e => ChangeStatus(package, "PENDING"))>Schimba status</button>
+                        }
+                        @if (package.Status == "PENDING")
+                        {
+                            <button class="btn btn-warning w-100" @onclick=@(e => ChangeStatus(package, "DELIVERED"))>Schimba status</button>
+                        }
+                        @if (package.Status == "DELIVERED")
+                        {
+                            <p>-</p>
                         }
                     </td>
                 </tr>
@@ -148,7 +222,27 @@
 
     private async Task SetCourierToDelivery()
     {
-        await deliveryService.SetCourierToDelivery(AWB, setCourier.courierID);
+        await deliveryService.SetCourierToDelivery(AWB, setCourier.courierID, navigationManager);
+    }
+
+    private async Task ChangeStatus(Package package, string status)
+    {
+        await packageService.ChangePackageStatus(package, status, navigationManager);
+    }
+
+    private async Task ChangeDeliveryStatus(Delivery delivery, string status)
+    {
+        await deliveryService.ChangeDeliveryStatusAsync(delivery, status, navigationManager);
+    }
+
+    private async Task RemoveCourier()
+    {
+        await deliveryService.RemoveCourierAsync(AWB, navigationManager);
+    }
+
+    private async Task Delete()
+    {
+        await deliveryService.DeleteDelivery(AWB, navigationManager);
     }
 
     protected override async Task OnInitializedAsync()

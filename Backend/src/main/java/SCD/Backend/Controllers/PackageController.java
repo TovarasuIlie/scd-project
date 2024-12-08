@@ -1,6 +1,7 @@
 package SCD.Backend.Controllers;
 
 import SCD.Backend.DTOs.PackageDTO;
+import SCD.Backend.Models.Package;
 import SCD.Backend.Services.PackageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,11 @@ public class PackageController {
     @PutMapping("edit-package/{id}")
     public ResponseEntity<?> editPackageDetails(@PathVariable Integer id, @RequestBody PackageDTO editPackage) {
         return packageService.editPackage(id, editPackage);
+    }
+
+    @PutMapping("change-package-status")
+    public ResponseEntity<?> changePackageStatus(@RequestBody Package pk) {
+        return packageService.setPackageStatus(pk);
     }
 
     @DeleteMapping("delete-package/{id}")

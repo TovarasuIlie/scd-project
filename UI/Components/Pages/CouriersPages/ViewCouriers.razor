@@ -1,6 +1,7 @@
 ﻿@page "/couriers/view/{id:int}"
 @using System.Security.Claims
 @inject ManagerService managerService;
+@inject DeliveryService deliveryService;
 @inject NavigationManager navigationManager;
 @attribute [Authorize(Roles = "ROLE_MANAGER")]
 
@@ -49,11 +50,11 @@
                                 {
                                     <button class="btn btn-warning w-100" @onclick="MakeCourier">Seteaza ca si courier!</button>
                                 }
-                                @if (courier.Manager is null)
+                                @if (courier.Manager is null && courier.Role != "ROLE_MANAGER")
                                 {
                                     <button class="btn btn-success w-100" @onclick="MakeYouManager">Ia in custodie!</button>
                                 }
-                                @if (courier.Manager is not null)
+                                @if (courier.Manager is not null && courier.Role != "ROLE_MANAGER" && int.Parse(context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value) == courier.Manager.Id)
                                 {
                                     <button class="btn btn-danger w-100" @onclick="RemoveYouManager">Renunta la custodie!</button>
                                 }
@@ -65,6 +66,45 @@
             </Authorized>
         </AuthorizeView>
     </div>
+    <h2>Istoric livrari</h2>
+    <hr>
+    @foreach (Delivery delivery in deliveries)
+    {
+        <div class="card border-0 shadow-lg mb-3">
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h5 class="card-title">@delivery.AWB</h5>
+                        <p class="card-text fs-6 mb-1">Adresa de ridicare: @delivery.PickingAddress</p>
+                        <p class="card-text fs-6">Plasata in: @delivery.CreateDate</p>
+                        <p class="card-text fs-6">
+                            @if (delivery.Status == "NEW")
+                            {
+                                <div class="badge bg-danger">
+                                    Colet nou
+                                </div>
+                            }
+                            @if (delivery.Status == "PENDING")
+                            {
+                                <div class="badge bg-warning">
+                                    Colet in curs
+                                </div>
+                            }
+                            @if (delivery.Status == "DELIVERED")
+                            {
+                                <div class="badge bg-success">
+                                    Livrat
+                                </div>
+                            }
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="/delivery/view/@delivery.AWB" class="btn btn-sm btn-primary float-end">Detalii</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div>
 
 @code {
@@ -72,10 +112,12 @@
     public int ID { get; set; }
 
     private Courier courier { get; set; } = new Courier();
+    private List<Delivery> deliveries { get; set; } = new List<Delivery>();
 
     protected override async Task OnInitializedAsync()
     {
         courier = await managerService.GetCourierAsync(ID);
+        deliveries = await deliveryService.GetAllDeliveryForCourierAsync(ID);
     }
 
     private async Task MakeCourier()

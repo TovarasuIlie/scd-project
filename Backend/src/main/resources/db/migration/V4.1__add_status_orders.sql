@@ -1,0 +1,2 @@
+ALTER TABLE deliveries
+    ADD COLUMN status enum('NEW', 'PENDING', 'DELIVERED') DEFAULT 'NEW';
