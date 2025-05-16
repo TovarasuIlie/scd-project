@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\authenticationpages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\authenticationpages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\formmodels\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\formmodels\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\authenticationpages\\qrcodepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\authenticationpages\\qrcodepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\authenticationpages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\authenticationpages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\formmodels\\otpvetifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\formmodels\\otpvetifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\qrcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\qrcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\courierspages\\viewcouriers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\courierspages\\viewcouriers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,32 +59,12 @@
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:authenticationprovider\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\formmodels\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\formmodels\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\authenticationpages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\authenticationpages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\pages\\authenticationpages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\pages\\authenticationpages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\formmodels\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\formmodels\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\models\\authentication\\loggeduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:models\\authentication\\loggeduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|c:\\users\\niculai ilie-traian\\documents\\proiecte\\scd-project\\ui\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3716E7D2-5CB4-41BD-85B3-1E71F44A1C24}|UI.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -138,67 +150,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomAuthenticationStateProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
-              "RelativeDocumentMoniker": "AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
-              "RelativeToolTip": "AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAEwBUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T10:01:12.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.razor",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Register.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\AuthenticationPages\\Register.razor",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Register.razor",
-              "RelativeToolTip": "Components\\Pages\\AuthenticationPages\\Register.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAABcAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "QRCodePage.razor",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\QRCodePage.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AuthenticationPages\\QRCodePage.razor",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\QRCodePage.razor",
+              "RelativeToolTip": "Components\\Pages\\AuthenticationPages\\QRCodePage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T15:56:50.391Z",
+              "WhenOpened": "2025-05-16T16:09:10.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Login.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\AuthenticationPages\\Login.razor",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Login.razor",
-              "RelativeToolTip": "Components\\Pages\\AuthenticationPages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T10:16:40.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "Services\\AuthenticationService.cs",
               "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\AuthenticationService.cs",
               "RelativeToolTip": "Services\\AuthenticationService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAmwE8AAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAEwFEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T12:44:45.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Register.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AuthenticationPages\\Register.razor",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Register.razor",
+              "RelativeToolTip": "Components\\Pages\\AuthenticationPages\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:56:50.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Login.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AuthenticationPages\\Login.razor",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\AuthenticationPages\\Login.razor",
+              "RelativeToolTip": "Components\\Pages\\AuthenticationPages\\Login.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T10:16:40.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -206,12 +214,11 @@
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T10:41:38.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T10:41:38.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
@@ -219,12 +226,11 @@
               "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T10:14:39.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T10:14:39.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "AllCouriers.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\CouriersPages\\AllCouriers.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\CouriersPages\\AllCouriers.razor",
@@ -232,25 +238,100 @@
               "RelativeToolTip": "Components\\Pages\\CouriersPages\\AllCouriers.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T21:33:30.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T21:33:30.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ViewCouriers.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\CouriersPages\\ViewCouriers.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\CouriersPages\\ViewCouriers.razor",
               "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\CouriersPages\\ViewCouriers.razor",
               "RelativeToolTip": "Components\\Pages\\CouriersPages\\ViewCouriers.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T21:33:46.686Z",
+              "WhenOpened": "2024-10-27T21:33:46.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Models\\FormModels\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\LoginForm.cs",
+              "RelativeToolTip": "Models\\FormModels\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T11:54:14.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OTPVetifyForm.cs",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\OTPVetifyForm.cs",
+              "RelativeDocumentMoniker": "Models\\FormModels\\OTPVetifyForm.cs",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\OTPVetifyForm.cs",
+              "RelativeToolTip": "Models\\FormModels\\OTPVetifyForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:02:51.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "QRCode.cs",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\QRCode.cs",
+              "RelativeDocumentMoniker": "Models\\QRCode.cs",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\QRCode.cs",
+              "RelativeToolTip": "Models\\QRCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:36:37.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\ManagerService.cs",
+              "RelativeDocumentMoniker": "Services\\ManagerService.cs",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\ManagerService.cs",
+              "RelativeToolTip": "Services\\ManagerService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T21:39:00.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomAuthenticationStateProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
+              "RelativeToolTip": "AuthenticationProvider\\CustomAuthenticationStateProvider.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAEwBUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T10:01:12.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T16:04:29.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\RegisterForm.cs",
               "RelativeDocumentMoniker": "Models\\FormModels\\RegisterForm.cs",
@@ -258,25 +339,11 @@
               "RelativeToolTip": "Models\\FormModels\\RegisterForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:25:18.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:25:18.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Models\\FormModels\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\FormModels\\LoginForm.cs",
-              "RelativeToolTip": "Models\\FormModels\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T11:54:14.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "LoggedUser.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\Authentication\\LoggedUser.cs",
               "RelativeDocumentMoniker": "Models\\Authentication\\LoggedUser.cs",
@@ -284,12 +351,11 @@
               "RelativeToolTip": "Models\\Authentication\\LoggedUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T10:03:30.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T10:03:30.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Courier.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\Courier.cs",
               "RelativeDocumentMoniker": "Models\\Courier.cs",
@@ -301,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "AndroidManifest.xml",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
@@ -312,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "DeliveryService.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\DeliveryService.cs",
               "RelativeDocumentMoniker": "Services\\DeliveryService.cs",
@@ -324,20 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ManagerService.cs",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\ManagerService.cs",
-              "RelativeDocumentMoniker": "Services\\ManagerService.cs",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\ManagerService.cs",
-              "RelativeToolTip": "Services\\ManagerService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwEoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T21:39:00.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ViewDelivery.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\DeliveryPages\\ViewDelivery.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\DeliveryPages\\ViewDelivery.razor",
@@ -349,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -357,12 +410,11 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T10:10:51.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T10:10:51.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
@@ -374,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "colors.xml",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Platforms\\Android\\Resources\\values\\colors.xml",
               "RelativeDocumentMoniker": "Platforms\\Android\\Resources\\values\\colors.xml",
@@ -382,12 +434,11 @@
               "RelativeToolTip": "Platforms\\Android\\Resources\\values\\colors.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-11-18T17:23:32.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T17:23:32.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AllDelivery.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Pages\\DeliveryPages\\AllDelivery.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\DeliveryPages\\AllDelivery.razor",
@@ -399,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "PackageService.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Services\\PackageService.cs",
               "RelativeDocumentMoniker": "Services\\PackageService.cs",
@@ -411,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "MainApplication.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Platforms\\Android\\MainApplication.cs",
               "RelativeDocumentMoniker": "Platforms\\Android\\MainApplication.cs",
@@ -423,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -435,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Package.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\Package.cs",
               "RelativeDocumentMoniker": "Models\\Package.cs",
@@ -447,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Delivery.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\Delivery.cs",
               "RelativeDocumentMoniker": "Models\\Delivery.cs",
@@ -459,19 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "Components\\Routes.razor",
-              "ToolTip": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Routes.razor",
-              "RelativeToolTip": "Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T16:04:29.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Components\\_Imports.razor",
@@ -483,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
@@ -495,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
@@ -507,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -519,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "API.cs",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\Models\\API.cs",
               "RelativeDocumentMoniker": "Models\\API.cs",
@@ -531,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Niculai Ilie-Traian\\Documents\\Proiecte\\scd-project\\UI\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",

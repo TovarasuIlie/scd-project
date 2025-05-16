@@ -18,8 +18,14 @@
                 <label for="floatingPassword">Parola</label>
                 <ValidationMessage class="text-danger" For="@(() => loginForm.Password)"></ValidationMessage>
             </div>
+            <div class="form-floating mb-3">
+                <InputText @bind-Value="loginForm!.OTP" type="text" class="form-control" id="floatingPassword" placeholder="Cod OTP" />
+                <label for="floatingPassword">Cod OTP</label>
+                <ValidationMessage class="text-danger" For="@(() => loginForm.OTP)"></ValidationMessage>
+            </div>
         <Blazorise.ValidationSummary />
             <button class="btn btn-sm btn-success mb-3">Autentifica-te!</button>
+            <button onclick="@SendCode"class="btn btn-sm btn-secondary mb-3">Trimite cod!</button>
             <p>Daca nu ai cont, creaza-ti unul <a href="/register" class="text-decoration-none">Apasand aici</a></p>
         </EditForm>
     </div>
@@ -30,5 +36,10 @@
     private async Task Submit()
     {
         await authService.LoginAsync(loginForm, navigation);
+    }
+
+    private async Task SendCode()
+    {
+        await authService.GenerateCode(loginForm);
     }
 }

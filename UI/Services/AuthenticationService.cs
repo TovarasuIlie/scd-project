@@ -57,12 +57,34 @@ namespace UI.Services
         {
             var httpClient = _httpClientFactory.CreateClient("API");
             var result = await httpClient.PostAsJsonAsync("/api/Authentication/register-account", registerForm);
+            if(!result.IsSuccessStatusCode)
+            {
+                var response = await result.Content.ReadFromJsonAsync<API>();
+                await Application.Current.MainPage.DisplayAlert("Status cont!", response.Message, "OK");
+            }
+            else
+            {
+                var response = await result.Content.ReadFromJsonAsync<QRCode>();
+                await SecureStorage.SetAsync("QR", response.Image);
+                navigation.NavigateTo("/qr-code/" + response.ID);
+            }
+        }
+
+        public async Task VerifyOTP(string id, OTPVetifyForm otpVetifyForm, NavigationManager navigation)
+        {
+            var httpClient = _httpClientFactory.CreateClient("API");
+            var result = await httpClient.PutAsJsonAsync("/api/Authentication/verify-otp/" + id, otpVetifyForm.Code);
             var response = await result.Content.ReadFromJsonAsync<API>();
             await Application.Current.MainPage.DisplayAlert("Status cont!", response.Message, "OK");
-            if(result.IsSuccessStatusCode)
-            {
-                navigation.NavigateTo("/login", true);
-            }
+            navigation.NavigateTo("/login");
+        }
+
+        public async Task GenerateCode(LoginForm loginForm)
+        {
+            var httpClient = _httpClientFactory.CreateClient("API");
+            var result = await httpClient.GetAsync("/api/Authentication/generate-code/" + loginForm.Email);
+            var response = await result.Content.ReadFromJsonAsync<API>();
+            await Application.Current.MainPage.DisplayAlert("Status cont!", response.Message, "OK");
         }
 
         private LoggedUser GetUserClaims(string jwt)

@@ -1,5 +1,6 @@
 package SCD.Backend.Services;
 
+import SCD.Backend.Models.Courier;
 import SCD.Backend.Models.Delivery;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.InternetAddress;
@@ -20,6 +21,16 @@ public class EmailService {
 
         email.setFrom(new InternetAddress("niculai614@gmail.com"));
         email.setRecipients(MimeMessage.RecipientType.TO, delivery.getEmail());
+        email.setSubject(title);
+        email.setContent(message, "text/html; charset=utf-8");
+        mailSender.send(email);
+    }
+
+    public void sendCode(Courier courier, String message, String title) throws MessagingException, IOException {
+        MimeMessage email = mailSender.createMimeMessage();
+
+        email.setFrom(new InternetAddress("niculai614@gmail.com"));
+        email.setRecipients(MimeMessage.RecipientType.TO, courier.getEmail());
         email.setSubject(title);
         email.setContent(message, "text/html; charset=utf-8");
         mailSender.send(email);

@@ -1,0 +1,37 @@
+﻿@page "/qr-code/{CourierID}"
+@inject AuthenticationService authService
+@inject NavigationManager navigation
+@attribute [AllowAnonymous]
+
+<div class="d-flex flex-row justify-content-center align-items-center vh-100">
+    <EditForm Model="otpVetifyForm" OnValidSubmit="Submit" class="card card-body shadow-lg border-0" style="max-width: 500px;">
+        <DataAnnotationsValidator />
+         <div class="card card-body shadow-lg border-0">
+            <img src="@imageBase64" class="img-fluid w-100 mx-auto" />
+        </div>
+        <div class="form-floating mb-3">
+            <InputText @bind-Value="otpVetifyForm.Code" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Cod OTP</label>
+            <ValidationMessage class="text-danger" For="@(() => otpVetifyForm.Code)"></ValidationMessage>
+        </div>
+        <Button Type="ButtonType.Submit" Color="Color.Success">Activeaza</Button>
+    </EditForm>
+</div>
+  
+
+@code {
+    [Parameter]
+    public string CourierID { get; set; }
+    public string imageBase64;
+    public OTPVetifyForm otpVetifyForm { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        imageBase64 = await SecureStorage.GetAsync("QR");
+    }
+
+    public async Task Submit()
+    {
+        await authService.VerifyOTP(CourierID, otpVetifyForm, navigation);
+    }
+}

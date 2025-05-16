@@ -1,0 +1,2 @@
+ALTER TABLE couriers
+ADD COLUMN code varchar(10) DEFAULT NULL;

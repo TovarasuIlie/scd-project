@@ -33,6 +33,15 @@ public class Courier implements UserDetails {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "secret_key")
+    private String secret;
+
+    @Column(name = "code")
+    private String code;
+
+    @Column(name = "mfa_enable")
+    private boolean mfaEnabled;
+
     @Column(name = "role")
     @Enumerated(value = EnumType.STRING)
     private Role role;

@@ -10,5 +10,8 @@ namespace UI.Models.FormModels
 
         [Required(ErrorMessage = "Parola este obligatorie!")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Codul este obligatorie!")]
+        public string OTP { get; set; }
     }
 }
